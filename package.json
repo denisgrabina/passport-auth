@@ -1,0 +1,33 @@
+{
+  "name": "passport-auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denisgrabina/passport-auth.git"
+  },
+  "keywords": [],
+  "author": "Denis Grabina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/denisgrabina/passport-auth/issues"
+  },
+  "homepage": "https://github.com/denisgrabina/passport-auth#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.17.0",
+    "mongoose": "^5.8.11",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  }
+}
