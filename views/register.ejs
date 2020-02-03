@@ -2,59 +2,61 @@
   <div class="col-md-6 m-auto">
     <div class="card card-body">
       <h1 class="text-center mb-3">
-        <i class="fas fa-user-plus"></i> Register
+        <i class="fas fa-user-plus"></i> Регистрация
       </h1>
-      <% include ./partials/messages %>
+      <%- include('partials/msg') -%>
       <form action="/users/register" method="POST">
         <div class="form-group">
-          <label for="name">Name</label>
+          <label for="name">Имя</label>
           <input
             type="name"
             id="name"
             name="name"
             class="form-control"
-            placeholder="Enter Name"
+            placeholder="Введите имя"
             value="<%= typeof name != 'undefined' ? name : '' %>"
           />
         </div>
         <div class="form-group">
-          <label for="email">Email</label>
+          <label for="email">Почта</label>
           <input
             type="email"
             id="email"
             name="email"
             class="form-control"
-            placeholder="Enter Email"
+            placeholder="Введите почту"
             value="<%= typeof email != 'undefined' ? email : '' %>"
           />
         </div>
         <div class="form-group">
-          <label for="password">Password</label>
+          <label for="password">Пароль</label>
           <input
             type="password"
             id="password"
             name="password"
             class="form-control"
-            placeholder="Create Password"
+            placeholder="Создайте пароль"
             value="<%= typeof password != 'undefined' ? password : '' %>"
           />
         </div>
         <div class="form-group">
-          <label for="password2">Confirm Password</label>
+          <label for="password2">Подтвердите пароль</label>
           <input
             type="password"
             id="password2"
             name="password2"
             class="form-control"
-            placeholder="Confirm Password"
+            placeholder="Подтвердите пароль"
             value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
           />
         </div>
         <button type="submit" class="btn btn-primary btn-block">
-          Register
+          Регистрация
         </button>
       </form>
-      <p class="lead mt-4">Have An Account? <a href="/users/login">Login</a></p>
+      <p class="lead mt-4">
+        Уже зарегестрированы? <a href="/users/login">Логин</a>
+      </p>
     </div>
   </div>
 </div>
